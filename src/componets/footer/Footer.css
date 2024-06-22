@@ -1,0 +1,15 @@
+#botom{
+    display: flex;
+    background-color:black;
+    width: 100%;
+    justify-content: space-around;
+    height: 100%;
+}
+.left{
+    
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
