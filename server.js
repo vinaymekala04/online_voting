@@ -28,7 +28,7 @@ app.use('*',(request,response)=>{
  //import dotenv core module
  //require("dotenv").config();
 //connect to the database
-const DBurl='mongodb+srv://vinay:vinay@cluster0.fzrmqg7.mongodb.net/?retryWrites=true&w=majority';
+const DBurl=process.env.URL;
 
 //connect with mongodb server
 mclient.connect(DBurl)
@@ -85,4 +85,4 @@ app.use((err,request,response,next)=>{
 })
 
 //const port=process.env.PORT; 
-app.listen(4000,()=>console.log('serve running at port number 4000.....'));;
+app.listen(process.env.PORT,()=>console.log('serve running at port number 4000.....'));;
